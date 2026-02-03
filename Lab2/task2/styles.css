@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body {
+    background: #0c0f14;
+    color: white;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 1.3;
+    padding: 80px;
+    position: relative;
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.left h1 {
+    font-size: 40px;
+    line-height: 1.25;
+    max-width: 800px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.close {
+    color: #ff7a00;
+}
+
+.friends {
+    color: #ff2aa1;
+}
+
+
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    background: linear-gradient(180deg, #111b22, #0c141a);
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.right input {
+    background: #1c2a33;
+    border: 1px solid #2c3c45;
+    border-radius: 10px;
+    padding: 16px;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.login {
+    background: #0a3c78;
+    border: none;
+    border-radius: 25px;
+    padding: 14px;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.forgot {
+    margin: 18px 0;
+    color: #cfd8dc;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.facebook {
+    background: transparent;
+    border: 1px solid #2c3c45;
+    color: #6bb7ff;
+    padding: 14px;
+    border-radius: 25px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.signup {
+    background: transparent;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.meta {
+    text-align: center;
+    color: #8a9aa5;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 250px;
+}
+
+.logo-photo img{
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+.nedachange {
+    position: relative;
+    top: 25px;
+    padding: auto auto;
+    display: flex;
+    flex-direction: column;
+}
