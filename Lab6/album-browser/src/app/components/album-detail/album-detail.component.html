@@ -1,0 +1,23 @@
+<div class="detail-container">
+  @if (loading) {
+    <div class="loading">Loading...</div>
+  }
+
+  @if (!loading && album) {
+    <button class="btn-back" (click)="goBack()">← Back</button>
+
+    <h1>Album #{{ album.id }}</h1>
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+
+    <div class="edit-section">
+      <label>Album name:</label>
+      <input [(ngModel)]="editTitle" class="title-input" />
+      <button class="btn-save" (click)="saveAlbum()">Save</button>
+      @if (saved) {
+        <span class="saved-msg"> Saved!</span>
+      }
+    </div>
+
+    <button class="btn-photos" (click)="viewPhotos()">View photos</button>
+  }
+</div>

@@ -1,0 +1,26 @@
+<div class="photos-container">
+  <button class="btn-back" (click)="goBack()">← Back to album</button>
+  <h1>Album #{{ albumId }} photos.</h1>
+
+  @if (loading) {
+    <div class="loading">Loading...</div>
+  }
+
+  @if (!loading && photos.length === 0) {
+    <div class="empty">Photos are not found.</div>
+  }
+
+  @if (!loading) {
+    <div class="photos-grid">
+      @for (photo of photos; track photo.id) {
+        <div class="photo-card">
+          <img
+            [src]="'https://picsum.photos/150'"
+            [alt]="photo.title"
+          />
+          <p class="photo-title">{{ photo.title }}</p>
+        </div>
+      }
+    </div>
+  }
+</div>

@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "online-store": {
+    "album-browser": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -27,12 +27,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -62,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "online-store:build:production"
+              "buildTarget": "album-browser:build:production"
             },
             "development": {
-              "buildTarget": "online-store:build:development"
+              "buildTarget": "album-browser:build:development"
             }
           },
           "defaultConfiguration": "development"

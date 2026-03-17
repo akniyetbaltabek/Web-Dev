@@ -1,0 +1,16 @@
+.about-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
